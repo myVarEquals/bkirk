@@ -1,0 +1,96 @@
+/* Colors */
+header span {
+  font-size: 40px; }
+
+header p {
+  text-align: left;
+  padding: 0; }
+
+/* Main Head */
+.jumbotron {
+  margin: 0;
+  font-family: 'Voltaire', sans-serif;
+  text-align: left;
+  background: linear-gradient(105deg, white 12.5em, #8cb3d9 12.5em, #8cb3d9 14.5em, #79a6d2 14.5em, #79a6d2 16.5em, #6699cc 16.5em, #6699cc 18.5em, #538cc6 18.5em, #538cc6 20.5em, #4080bf 20.5em, #4080bf 100%);
+  /* Bottom */
+  color: black;
+  border-bottom: 2px solid white;
+  border-radius: 0px; }
+
+header #advisor {
+  color: white; }
+
+#footer {
+  position: relative;
+  background: #336699;
+  color: white; }
+
+#footer h3 {
+  text-align: left !important;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0; }
+
+#footer ul {
+  text-align: left !important;
+  padding: 0; }
+  #footer ul a {
+    color: #a0c2df;
+    text-decoration: none;
+    transition: color 0.5s ease; }
+  #footer ul a:hover {
+    color: white;
+    transition: color 0.5s ease; }
+
+/* screen > 576px */
+@media only screen and (min-width: 576px) {
+  .jumbotron {
+    background: linear-gradient(105deg, white 14em, #8cb3d9 14em, #8cb3d9 16em, #79a6d2 16em, #79a6d2 18em, #6699cc 18.5em, #6699cc 20em, #538cc6 20em, #538cc6 22em, #4080bf 22em, #4080bf 100%);
+    /* Bottom */ } }
+@media only screen and (min-width: 768px) {
+  .navcustom {
+    margin-right: 5%; }
+
+  ul > .nav-item:not(:last-child) {
+    border-right: 1px solid white; } }
+nav {
+  margin: 0; }
+
+/* navbar styling */
+.navbar {
+  position: sticky;
+  height: 60px;
+  z-index: 9999;
+  background-color: #336699;
+  border-bottom: 4px solid #cc0000;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.8; }
+
+.nav-item {
+  padding: 6px 20px 0px 20px;
+  height: 56px;
+  min-width: 80px;
+  background-color: #336699;
+  color: #a0c2df;
+  transition: background-color 1s ease, color 0.5s ease; }
+  .nav-item:hover {
+    background-color: #8cb3d9;
+    transition: background-color 1s ease, color 0.5s ease; }
+  .nav-item:hover a {
+    color: white; }
+
+.nav-link {
+  color: #a0c2df;
+  transition: color 0.5s ease; }
+  .nav-link:hover {
+    color: white;
+    transition: color 0.5s ease; }
+
+.navbar-toggler:focus {
+  outline: none; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+/*# sourceMappingURL=navheadfoot.css.map */
