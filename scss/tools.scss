@@ -33,21 +33,28 @@ main {
 }
 
 .main-grid {
+  padding: 10px;
   display: grid;
+  grid-template-areas: "ad content ad";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 20px 10px;
+
+}
+
+.inner-grid {
+
+  grid-area: content;
+  display: grid;  
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  text-align: center;
+
 }
 
 .grid-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  max-width: 300px;
+
 }
 
-.card {
-  width: 300px;
-}
 
 .imgtext {
   position: absolute;

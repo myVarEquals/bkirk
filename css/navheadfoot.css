@@ -1,4 +1,8 @@
 /* Colors */
+ul {
+  list-style: none;
+}
+
 header span {
   font-size: 40px; }
 
