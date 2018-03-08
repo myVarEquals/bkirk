@@ -5,11 +5,12 @@ html, body {
 
 main {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: scroll; }
 
 #section-f {
   width: 100%;
-  height: 100%; }
+  height: auto; }
 
 #section-f .chart2img {
   position: absolute;
@@ -28,9 +29,11 @@ main {
   display: grid;
   text-align: center;
   width: 100%;
+  height: 100%;
   grid-template-columns: 1fr 5fr 1fr; }
 
 .card-head {
+  margin: 20px 0px;
   grid-column: 2;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -56,30 +59,27 @@ main {
   .imgtext > h1 {
     font-size: 15px; }
 
-/*
-.main-grid {
+@media (min-width: 600px) {
+  .main-grid {
+    padding-top: 10px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 3fr 1fr; }
 
-  padding-top: 10px;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 3fr 1fr;
+  .card-head h2 {
+    font-size: 35px; }
 
-}
+  .inner-grid {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 10px; }
 
-.inner-grid {
-
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px 10px;
-
-}
-
-.grid-card {
-
-    position: relative;
-
-}
-*/
+  .grid-card {
+    width: 200px;
+    position: relative; } }
+@media (min-width: 960px) {
+  .grid-card {
+    width: 250px; } }
 
 /*# sourceMappingURL=tools.css.map */
