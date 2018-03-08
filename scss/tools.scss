@@ -1,3 +1,12 @@
+/* Colors */
+$dkblue: rgb(51, 102, 153);
+$liblue1: rgb(140, 179, 217);
+$liblue2: rgb(121, 166, 210);
+$liblue3: rgb(102, 153, 204);
+$liblue4: rgb(83, 140, 198);
+$liblue5: rgb(64, 128, 191);
+$dkred: rgb(204, 0, 0);
+
 html, body {
 
   height: 100%;
@@ -9,6 +18,8 @@ main {
   width: 100%;
   height: 100%;
 }
+
+
 
 #section-f {
   width: 100%;
@@ -33,11 +44,54 @@ main {
 }
 
 .main-grid {
-  padding: 10px;
+  padding-top: 10px;
+  display: grid;
+  text-align: center;
+  width: 100%;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.card-head {
+  grid-column: 2;
+  color: rgba(255,255,255,1);
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0px 2px 10px black;
+
+}
+
+.inner-grid {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10px;
+  align-items: center;
+}
+
+.grid-card {
+  width: 150px;
+}
+
+.imgtext {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0px;
+
+  & > h1 {
+    font-size: 15px;
+  }
+}
+
+
+/*
+.main-grid {
+
+  padding-top: 10px;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-gap: 20px 10px;
 
 }
 
@@ -46,20 +100,13 @@ main {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 10px;
 
 }
 
 .grid-card {
 
-  max-width: 300px;
+    position: relative;
 
 }
-
-
-.imgtext {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(255, 0, 0, 0.7);
-  bottom: 0px;
-}
+*/
